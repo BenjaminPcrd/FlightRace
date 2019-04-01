@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Flight Race</string>
+    <string name="play_button">Play</string>
+    <string name="settings_button">Settings</string>
+    <string name="score_button">Scoreboard</string>
+    <string name="difficulty_label">Difficulty : </string>
+    <string name="easy_button">Easy</string>
+    <string name="normal_button">Normal</string>
+    <string name="hard_button">Hard</string>
+    <string name="sensitivity_label">Accelerometer sensitivity : </string>
+    <string name="fps_label">Frame per second : </string>
+    <string name="gameMode_label">Game mode : </string>
+    <string name="fingerMode_button">Finger</string>
+    <string name="gyroscopeMode_button">Accelerometer</string>
+    <string name="validate_button">Validate</string>
+    <string name="tryAgain_button">Try again</string>
+    <string name="backToMenu_button">Back to menu</string>
+    <string name="lost_label">Game Over</string>
+    <string name="score_label">Your score : </string>
+    <string name="delete_score_button">Delete all scores</string>
+</resources>

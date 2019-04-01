@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintRoot">
+
+    <com.example.flightrace.view.Painter
+        android:id="@+id/painter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:Title="GameLayout" />
+
+
+    <ImageView
+        android:id="@+id/coinImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        custom:srcCompat="@drawable/coin"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/nbCoinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        custom:layout_constraintLeft_toRightOf="@id/coinImageView"
+        custom:layout_constraintTop_toTopOf="parent"/>
+
+    <Chronometer
+        android:id="@+id/chrono"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        tools:ignore="MissingConstraints" />
+
+    <ToggleButton
+        android:id="@+id/pauseButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_pause"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        android:textOn=""
+        android:textOff=""
+        android:onClick="onPauseButtonClicked"
+        android:checked="false"/>
+
+
+    <ImageView
+        android:id="@+id/explosionAnimImg"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
